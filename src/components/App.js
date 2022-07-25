@@ -15,7 +15,6 @@ function App() {
 
   function handleAddTask(newData){
     setAddTask([...addTask, newData])
-    console.log(addTask)
   }
 
   function handleDeleteTask(data){

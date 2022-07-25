@@ -5,7 +5,7 @@ import React, {useState} from "react";
 function NewTaskForm({onTaskFormSubmit}) {
 
   const [task, setTask] = useState("")
-  const [category, setCategory] = useState("All")
+  const [category, setCategory] = useState("Food")
 
   function handleTaskSubmit(e){
     e.preventDefault()
@@ -28,7 +28,6 @@ function NewTaskForm({onTaskFormSubmit}) {
         Category
         <select name="category" value={category} onChange={(e) => setCategory(e.target.value)}>
           {/* render <option> elements for each category here */}
-          <option value="All">All</option>
           <option value="Food">Food</option>
           <option value="Money">Money</option>
           <option value="Code">Code</option>
